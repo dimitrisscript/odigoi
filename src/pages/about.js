@@ -1,14 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="Σχετικά" />
-    <p>TODO...</p>
-    <Link to="/">Πίσω στην αρχική!</Link>
+    <p>Η ιστοσελίδα αυτή παρουσιάζει φωτογραφίες από μαλάκες οδηγούς που οδηγούν ή παρκάρουν σαν μαλάκες.</p>
   </Layout>
 )
 

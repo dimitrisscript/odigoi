@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Αρχική" keywords={`μαλάκες|οδηγοί||φανάρια|πεζοδρόμια`.split(`|`)} />
-
     <Image />
   </Layout>
 )
