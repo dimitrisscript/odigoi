@@ -3,6 +3,7 @@ module.exports = {
     title: `Μαλάκες Οδηγοί!`,
     description: `Μία συλλογή από φωτογραφίες από αυτοκίνητα και μηχανάκια τα οποία οδηγούν μαλάκες.`,
     author: `malakes-odigoi`,
+    siteUrl: `https://malakes-odigoi.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,5 +31,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-sitemap`,
   ],
 }
