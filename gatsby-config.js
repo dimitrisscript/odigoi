@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Μαλάκες Οδηγοί!`,
     description: `Μία συλλογή από φωτογραφίες από αυτοκίνητα και μηχανάκια τα οποία οδηγούν μαλάκες.`,
-    author: `@gatsbyjs`,
+    author: `malakes-odigoi`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,13 +18,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Μαλάκες Οδηγοί`,
+        short_name: `Μαλάκες Οδηγοί`,
         start_url: `/`,
         background_color: `#ffff00`,
         theme_color: `#ffff00`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
