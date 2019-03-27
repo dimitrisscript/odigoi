@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import GitHubButton from "react-github-btn"
 
 import Header from "./header"
 import "./layout.css"
@@ -35,8 +36,15 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
-            malakes-odigoi.com © {new Date().getFullYear()}
+          <footer style={{ borderTop: "1px solid gray", marginTop: "1em" }}>
+            <p>malakes-odigoi.com © {new Date().getFullYear()}</p>
+            <GitHubButton
+              href="https://github.com/malakes-odigoi/website/fork"
+              data-size="large"
+              aria-label="Fork malakes-odigoi/website on GitHub"
+            >
+              Fork
+            </GitHubButton>
           </footer>
         </div>
       </>
