@@ -8,9 +8,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Αρχική" keywords={`μαλάκες|οδηγοί||φανάρια|πεζοδρόμια`.split(`|`)} />
 
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    <Image />
   </Layout>
 )
 
