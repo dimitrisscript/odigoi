@@ -12,7 +12,7 @@ export const cars = [
   },
   {
     id: 2,
-    title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω.",
+    title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!",
     description: "Όπως τον παλιό καλό καιρό.",
     tags: "website|todo".split("|"),
     date: "2019-03-28",
