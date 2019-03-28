@@ -19,6 +19,13 @@ export const cars = [
   },
   {
     id: 3,
+    title: "Δεν θα περάσει κανείς από εκεί.",
+    description: "Αλλά και να περάσει κανένας ανάπηρος, τυφλός ή με καρότσι, στα αρχίδια μου.",
+    tags: "παρκάρισμα|ράμπα|οδηγός τυφλών|διάβαση".split("|"),
+    date: "2019-03-06",
+  },
+  {
+    id: 999,
     title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!",
     description: "Όπως τον παλιό καλό καιρό.",
     tags: "website|todo".split("|"),
@@ -38,7 +45,8 @@ const imagesQuery = graphql`
   query {
     image1: file(relativePath: { eq: "IMG_20190319_174455.jpg" }) {...servicesImage}
     image2: file(relativePath: { eq: "IMG_20180201_085038.jpg" }) {...servicesImage}
-    image3: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
+    image3: file(relativePath: { eq: "IMG_20190306_090443.jpg" }) {...servicesImage}
+    image999: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
 
