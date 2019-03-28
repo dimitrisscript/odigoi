@@ -1,0 +1,4 @@
+- Order data asc by date.
+- Make sure anchors work in all cases.
+- Submit form.
+- NSFW button for descriptions.
