@@ -36,7 +36,7 @@ export const cars = [
 const imagesQuery = graphql`
   fragment servicesImage on File {
     childImageSharp {
-      fluid(maxWidth: 1024) {
+      fluid(maxWidth: 1024, quality: 80) {
         ...GatsbyImageSharpFluid
       }
     }
