@@ -78,7 +78,7 @@ main {
 .Car .meta {
   font-size: 0.8em;
   font-style: italic;
-  color: gray;
+  color: #444;
 }
 .Car .meta .tags {
   display: inline-block;
