@@ -3,8 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Car from "../components/car"
-
-import {cars} from "../data"
+import { cars } from "../data"
 
 const IndexPage = () => (
   <Layout>
