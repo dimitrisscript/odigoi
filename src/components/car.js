@@ -5,21 +5,24 @@ import { renderCarImage } from "../data"
 function Car({ id, title, description, tags, date }) {
   return (
     <div className="Car" id={id}>
-      <header>
-        <h3><a href={`#${id}`}><span className="code">#{id}: </span>{title}</a></h3>
-        <div className="meta">
-          <time dateTime={date}>{date}</time>
-          {tags.length > 0 && (
-            <ul className="tags">
-              {tags.map(tag => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
-          )}
-        </div>
-      </header>
-      {renderCarImage(id)}
+      <h3>
+        <a href={`#${id}`}>
+          <span className="code">#{id}: </span>
+          {title}
+        </a>
+      </h3>
       {description && <p className="description">{description}</p>}
+      {renderCarImage(id)}
+      <div className="meta">
+        <time dateTime={date}>{date}</time>
+        {tags.length > 0 && (
+          <ul className="tags">
+            {tags.map(tag => (
+              <li key={tag}>{tag}</li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   )
 }
