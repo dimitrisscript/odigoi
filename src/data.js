@@ -46,7 +46,7 @@ export const cars = [
     date: "2018-09-04",
   },
   {
-    id: 911,
+    id: 9111,
     title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!\"",
     description: "Όπως τον παλιό καλό καιρό.",
     tags: "website|todo".split("|"),
@@ -70,7 +70,7 @@ const imagesQuery = graphql`
     image4: file(relativePath: { eq: "IMG_20180827_201816.jpg" }) {...servicesImage}
     image5: file(relativePath: { eq: "IMG_20180903_200224.jpg" }) {...servicesImage}
     image6: file(relativePath: { eq: "IMG_20180904_184043.jpg" }) {...servicesImage}
-    image911: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
+    image9111: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
 
