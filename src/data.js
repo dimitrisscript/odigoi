@@ -34,9 +34,16 @@ export const cars = [
   {
     id: 5,
     title: "Εδώ είναι το σπίτι μου.",
-    description: "\"Μένω εδώ 15 χρόνια. Θα το παρκάρω όπου θέλω.",
+    description: "\"Μένω εδώ 15 χρόνια. Θα το παρκάρω όπου θέλω.\"",
     tags: "παρκάρισμα|πεζοδρόμιο".split("|"),
     date: "2018-09-03",
+  },
+  {
+    id: 6,
+    title: "Τέσσερα αμάξια ξεκουράζονται.",
+    description: "Πάνω στο πεζοδρόμιο φυσικά. Όσοι χρειάζονται τη ράμπα, ας πάνε από το δρόμο.",
+    tags: "παρκάρισμα|πεζοδρόμιο|ράμπα".split("|"),
+    date: "2018-09-04",
   },
   {
     id: 999,
@@ -62,6 +69,7 @@ const imagesQuery = graphql`
     image3: file(relativePath: { eq: "IMG_20190306_090443.jpg" }) {...servicesImage}
     image4: file(relativePath: { eq: "IMG_20180827_201816.jpg" }) {...servicesImage}
     image5: file(relativePath: { eq: "IMG_20180903_200224.jpg" }) {...servicesImage}
+    image6: file(relativePath: { eq: "IMG_20180904_184043.jpg" }) {...servicesImage}
     image999: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
