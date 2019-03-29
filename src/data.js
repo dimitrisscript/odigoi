@@ -25,6 +25,13 @@ export const cars = [
     date: "2019-03-06",
   },
   {
+    id: 4,
+    title: "Εμπόδιο.",
+    description: "\"Πετάχτηκα στον μανάβη για 5 λεπτά ρε φίλε, τι θέλεις δηλαδή;",
+    tags: "παρκάρισμα|ράμπα|οδηγός τυφλών|διάβαση".split("|"),
+    date: "2018-08-27",
+  },
+  {
     id: 999,
     title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!",
     description: "Όπως τον παλιό καλό καιρό.",
@@ -46,6 +53,7 @@ const imagesQuery = graphql`
     image1: file(relativePath: { eq: "IMG_20190319_174455.jpg" }) {...servicesImage}
     image2: file(relativePath: { eq: "IMG_20180201_085038.jpg" }) {...servicesImage}
     image3: file(relativePath: { eq: "IMG_20190306_090443.jpg" }) {...servicesImage}
+    image4: file(relativePath: { eq: "IMG_20180827_201816.jpg" }) {...servicesImage}
     image999: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
