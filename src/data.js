@@ -64,7 +64,14 @@ export const cars = [
     title: "\"Και που να το αφήσω ρε φίλε;\"",
     description: "Κάνε την δουλειά σου και μην σε νοιάζει για τους άλλους. Στο background άλλα 3 αμάξια που έχουν μετατρέψει το πεζοδρόμιο σε \"αυτοκινητοδρόμιο\".",
     tags: "παρκάρισμα|πεζοδρόμιο|ράμπα|οδηγός τυφλών|διάβαση".split("|"),
-    date: "2018-09-07",
+    date: "2018-10-21",
+  },
+  {
+    id: 10,
+    title: "Ο πεζός θα πάει από δίπλα.",
+    description: "Οι ζωγραφισμένες άσπρες γραμμές και τα πλακάκια με τις τελίτσες πρέπει να είναι κάποια εικαστική παρέμβαση.",
+    tags: "παρκάρισμα|πεζοδρόμιο|ράμπα|οδηγός τυφλών|διάβαση".split("|"),
+    date: "2018-11-06",
   },
   {
     id: 911,
@@ -94,6 +101,7 @@ const imagesQuery = graphql`
     image7: file(relativePath: { eq: "IMG_20180904_184122.jpg" }) {...servicesImage}
     image8: file(relativePath: { eq: "IMG_20180907_193752.jpg" }) {...servicesImage}
     image9: file(relativePath: { eq: "IMG_20181021_130938.jpg" }) {...servicesImage}
+    image10: file(relativePath: { eq: "IMG_20181106_172448.jpg" }) {...servicesImage}
     image911: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
