@@ -16,7 +16,7 @@ export default class IndexPage extends PureComponent {
   render() {
     return (
       <Layout>
-        <SEO title="Αρχική" keywords={`μαλάκες|οδηγοί|φανάρια|πεζοδρόμια`.split(`|`)} />
+        <SEO title="" keywords={`μαλάκες|οδηγοί|φανάρια|πεζοδρόμια`.split(`|`)} />
         {cars
           .sort((a, b) => b.id - a.id)
           .map(car => (
