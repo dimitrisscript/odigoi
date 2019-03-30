@@ -103,14 +103,6 @@ export const cars = [
     tags: "μηχανάκι|ποδηλατόδρομος".split("|"),
     date: "2018-11-14",
   },
-  {
-    id: 99,
-    title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!",
-    description: "Όπως τον παλιό καλό καιρό.",
-    images: ["under_construction"],
-    tags: "website".split("|"),
-    date: "2019-03-28",
-  },
 ]
 
 const imagesQuery = graphql`
@@ -137,7 +129,6 @@ const imagesQuery = graphql`
     IMG_20181114_101245: file(relativePath: { eq: "IMG_20181114_101245.jpg" }) {...servicesImage}
     IMG_20181123_085935: file(relativePath: { eq: "IMG_20181123_085935.jpg" }) {...servicesImage}
     IMG_20181123_085936: file(relativePath: { eq: "IMG_20181123_085936.jpg" }) {...servicesImage}
-    under_construction: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
 
