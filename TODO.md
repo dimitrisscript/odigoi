@@ -1,4 +1,3 @@
-- Order data asc by date.
 - NSFW button for descriptions.
 - Page per post?
 - Submit form.
