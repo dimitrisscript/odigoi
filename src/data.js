@@ -60,6 +60,13 @@ export const cars = [
     date: "2018-09-07",
   },
   {
+    id: 9,
+    title: "\"Και που να το αφήσω ρε φίλε;\"",
+    description: "Κάνε την δουλειά σου και μην σε νοιάζει για τους άλλους.",
+    tags: "παρκάρισμα|πεζοδρόμιο|ράμπα|οδηγός τυφλών|διάβαση".split("|"),
+    date: "2018-09-07",
+  },
+  {
     id: 911,
     title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!\"",
     description: "Όπως τον παλιό καλό καιρό.",
@@ -86,6 +93,7 @@ const imagesQuery = graphql`
     image6: file(relativePath: { eq: "IMG_20180904_184043.jpg" }) {...servicesImage}
     image7: file(relativePath: { eq: "IMG_20180904_184122.jpg" }) {...servicesImage}
     image8: file(relativePath: { eq: "IMG_20180907_193752.jpg" }) {...servicesImage}
+    image9: file(relativePath: { eq: "IMG_20181021_130938.jpg" }) {...servicesImage}
     image911: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
