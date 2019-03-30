@@ -53,6 +53,13 @@ export const cars = [
     date: "2018-09-04",
   },
   {
+    id: 8,
+    title: "Αρχοντικά αραγμένη στον ποδηλατόδρομο.",
+    description: "Άλλη μία BMW η οποία στην προηγούμενη ζωή της ήτανε ποδήλατο.",
+    tags: "παρκάρισμα|πεζοδρόμιο|ποδηλατόδρομος|bmw".split("|"),
+    date: "2018-09-07",
+  },
+  {
     id: 911,
     title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!\"",
     description: "Όπως τον παλιό καλό καιρό.",
@@ -78,6 +85,7 @@ const imagesQuery = graphql`
     image5: file(relativePath: { eq: "IMG_20180903_200224.jpg" }) {...servicesImage}
     image6: file(relativePath: { eq: "IMG_20180904_184043.jpg" }) {...servicesImage}
     image7: file(relativePath: { eq: "IMG_20180904_184122.jpg" }) {...servicesImage}
+    image8: file(relativePath: { eq: "IMG_20180907_193752.jpg" }) {...servicesImage}
     image911: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
