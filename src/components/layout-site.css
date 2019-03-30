@@ -95,3 +95,17 @@ main {
 .Car .gatsby-image-wrapper:not(:first-child) {
   margin-top: 0.25em;
 }
+
+textarea,
+input[type="text"] {
+  width: 50% !important;
+  padding: 0.5em;
+}
+textarea {
+  height: 10em;
+}
+
+input::placeholder {
+  color: #888 !important;
+  font-style: italic;
+}
