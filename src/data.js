@@ -17,7 +17,7 @@ export const cars = [
     description:
       "Τέσσερα αμάξια και ένα μηχανάκι αραγμένα βαθιά μέσα σε πεζοδρόμια ράμπες, διάβαση και οδηγό τυφλών, και για bonus, τσουπ, νάτος ο μαλάκας ο παπάκιας ο deliverας ανάποδο ρεύμα. Απλά μπουρδέλο.",
     images: ["IMG_20180201_085038"],
-    tags: "παρκάρισμα|ανάποδα|παπάκι|ράμπα|οδηγός τυφλών|διάβαση".split("|"),
+    tags: "παρκάρισμα|ανάποδα|μηχανάκι|ράμπα|οδηγός τυφλών|διάβαση".split("|"),
     date: "2018-02-01",
   },
   {
@@ -96,11 +96,19 @@ export const cars = [
     date: "2018-11-14",
   },
   {
+    id: 12,
+    title: "Το παρκάρισμα της χρονιάς.",
+    description: "Έχει κίνηση, ας πάμε από τον ποδηλατόδρομο. Χαζοί είμαστε;",
+    images: ["IMG_20181123_085936", "IMG_20181123_085935"],
+    tags: "μηχανάκι|ποδηλατόδρομος".split("|"),
+    date: "2018-11-14",
+  },
+  {
     id: 99,
-    title: 'Under Construction - Υπομονή μέχρι να τα ανεβάσω!"',
+    title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!",
     description: "Όπως τον παλιό καλό καιρό.",
     images: ["under_construction"],
-    tags: "website|todo".split("|"),
+    tags: "website".split("|"),
     date: "2019-03-28",
   },
 ]
@@ -127,6 +135,9 @@ const imagesQuery = graphql`
     IMG_20181106_172448: file(relativePath: { eq: "IMG_20181106_172448.jpg" }) {...servicesImage}
     IMG_20181114_100827: file(relativePath: { eq: "IMG_20181114_100827.jpg" }) {...servicesImage}
     IMG_20181114_101245: file(relativePath: { eq: "IMG_20181114_101245.jpg" }) {...servicesImage}
+    IMG_20181123_085935: file(relativePath: { eq: "IMG_20181123_085935.jpg" }) {...servicesImage}
+    IMG_20181123_085936: file(relativePath: { eq: "IMG_20181123_085936.jpg" }) {...servicesImage}
+
     under_construction: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
