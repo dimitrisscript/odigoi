@@ -9,7 +9,7 @@ const AboutPage = () => (
     <hr />
 
     <h3>Επικοινωνία:</h3>
-    <form name="contact" action="/thanks.html" netlify="true">
+    <form name="contact" method="POST" data-netlify="true">
       <p>
         <label>
           Όνομα:
