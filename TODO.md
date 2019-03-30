@@ -1,5 +1,4 @@
 - Order data asc by date.
-- Make sure anchors work in all cases.
 - NSFW button for descriptions.
 - Page per post?
 - Submit form.
