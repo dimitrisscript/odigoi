@@ -7,7 +7,7 @@ const AboutPage = () => (
     <SEO title="Σχετικά" />
     <p>Η ιστοσελίδα αυτή παρουσιάζει φωτογραφίες από μαλάκες οδηγούς που οδηγούν ή παρκάρουν σαν μαλάκες.</p>
     <hr />
-
+    {/* THIS SHIT DOESN'T WORK YET AND DON'T KNOW WHY
     <h3>Επικοινωνία:</h3>
     <form name="contact" method="post" action="/about" data-netlify="true">
       <p>
@@ -35,6 +35,7 @@ const AboutPage = () => (
         <input type="submit" value="Αποστολή" />
       </p>
     </form>
+    */}
   </Layout>
 )
 
