@@ -74,6 +74,20 @@ export const cars = [
     date: "2018-11-06",
   },
   {
+    id: 11,
+    title: "Το παρκάρισμα της χρονιάς (part 1).",
+    description: "Έκλεισε και τον καθρέφτη του για το αμάξι που δεν χωράει να περάσει.",
+    tags: "παρκάρισμα|facepalm".split("|"),
+    date: "2018-11-14",
+  },
+  {
+    id: 12,
+    title: "Το παρκάρισμα της χρονιάς (part 2).",
+    description: "Άγνωστο τι σκεφτότανε όταν το έκανε αυτό.",
+    tags: "παρκάρισμα|facepalm".split("|"),
+    date: "2018-11-14",
+  },
+  {
     id: 911,
     title: "Under Construction - Υπομονή μέχρι να τα ανεβάσω!\"",
     description: "Όπως τον παλιό καλό καιρό.",
@@ -102,6 +116,8 @@ const imagesQuery = graphql`
     image8: file(relativePath: { eq: "IMG_20180907_193752.jpg" }) {...servicesImage}
     image9: file(relativePath: { eq: "IMG_20181021_130938.jpg" }) {...servicesImage}
     image10: file(relativePath: { eq: "IMG_20181106_172448.jpg" }) {...servicesImage}
+    image11: file(relativePath: { eq: "IMG_20181114_100827.jpg" }) {...servicesImage}
+    image12: file(relativePath: { eq: "IMG_20181114_101245.jpg" }) {...servicesImage}
     image911: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
