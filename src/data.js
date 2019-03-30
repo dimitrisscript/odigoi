@@ -137,11 +137,10 @@ const imagesQuery = graphql`
     IMG_20181114_101245: file(relativePath: { eq: "IMG_20181114_101245.jpg" }) {...servicesImage}
     IMG_20181123_085935: file(relativePath: { eq: "IMG_20181123_085935.jpg" }) {...servicesImage}
     IMG_20181123_085936: file(relativePath: { eq: "IMG_20181123_085936.jpg" }) {...servicesImage}
-
     under_construction: file(relativePath: { eq: "under-construction.png" }) {...servicesImage}
   }
 `
 
-export const renderCarImage = id => (
-  <StaticQuery query={imagesQuery} render={data => <Img fluid={data[id].childImageSharp.fluid} />} />
+export const renderCarImage = (imageId, index) => (
+  <StaticQuery key={index} query={imagesQuery} render={data => <Img fluid={data[imageId].childImageSharp.fluid} />} />
 )

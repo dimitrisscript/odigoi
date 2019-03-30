@@ -12,7 +12,7 @@ function Car({ id, title, description, images, tags, date }) {
         </a>
       </h3>
       {description && <p className="description">{description}</p>}
-      {images.map(image=>renderCarImage(image))}
+      {images.map((image, index)=>renderCarImage(image, index))}
       <div className="meta">
         <time dateTime={date}>{date}</time>
         {tags.length > 0 && (
