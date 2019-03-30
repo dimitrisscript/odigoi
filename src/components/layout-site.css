@@ -92,3 +92,6 @@ main {
 .Car img {
   border-radius: 4px;
 }
+.Car .gatsby-image-wrapper:not(:first-child) {
+  margin-top: 0.25em;
+}

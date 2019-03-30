@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { renderCarImage } from "../data"
 
-function Car({ id, title, description, tags, date }) {
+function Car({ id, title, description, images, tags, date }) {
   return (
     <div className="Car" id={id}>
       <h3>
@@ -12,7 +12,7 @@ function Car({ id, title, description, tags, date }) {
         </a>
       </h3>
       {description && <p className="description">{description}</p>}
-      {renderCarImage(id)}
+      {images.map(image=>renderCarImage(image))}
       <div className="meta">
         <time dateTime={date}>{date}</time>
         {tags.length > 0 && (
@@ -31,6 +31,7 @@ Car.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
+  images: PropTypes.array.isRequired,
   tags: PropTypes.array,
   date: PropTypes.string.isRequired,
 }
