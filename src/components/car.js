@@ -17,7 +17,7 @@ function Car({ id, title, description, images, tags, date }) {
         <time dateTime={date}>{date}</time>
         {tags.length > 0 && (
           <ul className="tags">
-            {tags.map(tag => (
+            {tags.sort().map(tag => (
               <li key={tag}>{tag}</li>
             ))}
           </ul>
